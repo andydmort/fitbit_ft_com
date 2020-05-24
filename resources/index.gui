@@ -1,0 +1,60 @@
+<svg>
+
+  <svg id="q_src" width="300" height="300" visibility="hidden">
+    <!-- <rect width="300" height="300" /> -->
+
+      <!-- <use href="#tile-list" id="tile_list"> -->
+      <use href="#scrollview">
+        <!-- <use href="#tile-list-header" class="tile-list-item"> -->
+          <!-- <text>Stuff in queue</text> -->
+        <!-- </use> -->
+        <use id="tile_item_0" href="#scrollview-item" class="tile-list-item" >
+          <text id="text_item_0">xxxxxxxxxxxxxxxxxxxx</text>
+        </use>
+        <use id="tile_item_1" href="#scrollview-item" class="tile-list-item" >
+          <text id="text_item_1">xxxxxxxxxxxxxxxxxxxx</text>
+        </use>
+        <use id="tile_item_2" href="#scrollview-item" class="tile-list-item" >
+          <text id="text_item_2">xxxxxxxxxxxxxxxxxxxx</text>
+        </use>
+        <use id="tile_item_3" href="#scrollview-item" class="tile-list-item" >
+          <text id="text_item_3">xxxxxxxxxxxxxxxxxxxx</text>
+        </use>
+
+        <!-- <use href="#tile-list-footer" class="tile-list-item" visibility="hidden"> -->
+        <!-- <text>Footer</text> -->
+
+      </use>
+
+  </svg>
+
+  <svg id="options_screen" width="300" visibility="visible">
+    <rect width="300" height="300" />
+    <use href="#tile-list" id="option_list">
+
+      <use href="#tile-list-item" class="tile-list-item">
+        <use href="#square-button" fill="fb-green" id="send_btn">
+          <set href="#text" attributeName="text-buffer" to="Send Message" />
+        </use>
+      </use>
+      
+      <use href="#tile-list-item" class="tile-list-item">
+        <use href="#square-button" fill="fb-gray" id="q_btn">
+          <set href="#text" attributeName="text-buffer" to="View Queue" />
+        </use>
+      </use>
+
+      <use href="#tile-list-item" class="tile-list-item">
+        <use href="#square-button" fill="fb-gray" id="clear_q_btn">
+          <set href="#text" attributeName="text-buffer" to="Clear Queue" />
+        </use>
+      </use>
+
+      <use href="#tile-list-item" class="tile-list-item">
+        <text id="message_status" fill="white">XX/XX/XX XX:XX message sent</text>
+      </use>
+      
+    </use>
+  </svg>
+
+</svg>
